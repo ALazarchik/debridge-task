@@ -1,0 +1,33 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "no-only-tests"
+    ],
+    "rules": {
+        "no-unused-expressions": 0,
+        "no-undefined": 0,
+        "no-use-before-define": 1,
+        "no-only-tests/no-only-tests": [
+            "error",
+            {
+                "focus": [
+                    "only"
+                ]
+            }
+        ],
+        "max-lines": [
+            "warn",
+            {
+                "max": 800,
+                "skipBlankLines": true,
+                "skipComments": true
+            }
+        ]
+    },
+    "parserOptions": {
+        "ecmaVersion": 2023,
+        "sourceType": "module"
+    }
+}

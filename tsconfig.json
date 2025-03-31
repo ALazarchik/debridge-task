@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "skipLibCheck": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "paths": {
+            "@e2e-support/*": [
+                "support/*"
+            ],
+            "@e2e-testConfig": [
+                "test.config.ts"
+            ]
+        }
+    },
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "playwright-report"
+    ]
+}
