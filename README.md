@@ -1,1 +1,1 @@
-# debridge-task
+# Playwright TypeScript framework template
