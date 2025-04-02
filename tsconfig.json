@@ -12,6 +12,15 @@
             ],
             "@e2e-testConfig": [
                 "test.config.ts"
+            ],
+            "@e2e-components/*": [
+                "support/ui/components/*"
+            ],
+            "@e2e-modals/*": [
+                "support/ui/modals/*"
+            ],
+            "@e2e-pages/*": [
+                "support/ui/pages/*"
             ]
         }
     },

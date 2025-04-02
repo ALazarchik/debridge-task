@@ -1,10 +1,12 @@
 {
     "name": "debridge-task",
     "scripts": {
-        "prettier:run": "prettier --write \"**/*.ts\""
+        "prettier:run": "prettier --write \"**/*.ts\"",
+        "playwright:test": "playwright test"
     },
     "author": "Andrei Lazarchik",
     "devDependencies": {
+        "@faker-js/faker": "^9.6.0",
         "@types/node": "^22.13.14",
         "@typescript-eslint/eslint-plugin": "^8.28.0",
         "@typescript-eslint/parser": "^8.28.0",

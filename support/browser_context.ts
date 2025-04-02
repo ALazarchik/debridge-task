@@ -1,4 +1,5 @@
-import { Browser, BrowserContext } from 'playwright';
+import { Browser, BrowserContext, Page } from 'playwright';
+import testConfig from '@e2e-testConfig';
 
 export class TestBrowser {
     readonly browser: Browser;
@@ -9,7 +10,7 @@ export class TestBrowser {
         this.context = null;
     }
 
-    async close() {
+    async close(): Promise<void> {
         if (this.context) {
             await this.context.close();
         }

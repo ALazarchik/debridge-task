@@ -29,9 +29,9 @@ export default defineConfig({
             use: {
                 browserName: 'chromium',
                 permissions: [],
-                viewport: { width: 1600, height: 900 },
+                viewport: { width: 1280, height: 760 },
             },
         },
     ],
-    reporter: [['html', { open: 'always' }]],
+    reporter: [['html', { open: 'on-failure' }]],
 });
